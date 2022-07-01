@@ -8,6 +8,8 @@
     <title>Orion Fitness</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -20,43 +22,44 @@
         </div>
         <div class="navbar-menu">
             <a href="/" class="navbar-link">Home</a> 
-            <a href="/services.html" class="navbar-link">Services</a> 
+            <a href="#services" class="navbar-link">Services</a> 
             <a href="/plans.html" class="navbar-link">Plans</a> 
             <a href="/trainers.html" class="navbar-link">Trainers</a> 
         </div>
     </nav>
     <div class="hero">
         <div class="hero-content">
-            <h1>Orion Fitness</h1>
-            <p>Join now for $30</p>
-            <a href="/" class="button">Get Started</a>
+            <h1 class="animate-hero">Orion Fitness</h1>
+            <p class="animate-hero">Join now for $30</p>
+            <a href="/" class="button animate-hero">Get Started</a>
         </div>
     </div>
     <!-- Services section -->
-    <div class="services">
+    <div id="services" class="services">
         <div class="services-container">
             <div>
-                <p class="topline">Features</p>
-                <h1 class="services-heading">What We Offer</h1>
+                <p class="topline animate-services">Features</p>
+                <h1 class="services-heading animate-services">What We Offer</h1>
                 <div class="services-features">
-                    <p class="services-feature"><i class="fa-solid fa-circle-check"></i>Group Fitness Classes</p>
-                    <p class="services-feature"><i class="fa-solid fa-circle-check"></i>Personal Trainer Session</p>
-                    <p class="services-feature"><i class="fa-solid fa-circle-check"></i>Indoor Pool</p>
-                    <p class="services-feature"><i class="fa-solid fa-circle-check"></i>Steam Room and Sauna</p>
-                    <p class="services-feature"><i class="fa-solid fa-circle-check"></i>Basketball Court</p>
-                    <p class="services-feature"><i class="fa-solid fa-circle-check"></i>Open 24/7</p>
+                    <p class="services-feature animate-services"><i class="fa-solid fa-circle-check"></i>Group Fitness Classes</p>
+                    <p class="services-feature animate-services"><i class="fa-solid fa-circle-check"></i>Personal Trainer Session</p>
+                    <p class="services-feature animate-services"><i class="fa-solid fa-circle-check"></i>Indoor Pool</p>
+                    <p class="services-feature animate-services"><i class="fa-solid fa-circle-check"></i>Steam Room and Sauna</p>
+                    <p class="services-feature animate-services"><i class="fa-solid fa-circle-check"></i>Basketball Court</p>
+                    <p class="services-feature animate-services"><i class="fa-solid fa-circle-check"></i>Open 24/7</p>
                 </div>
             </div>
             <div>
-                <img src="./Images/gym-2.jpg" alt="gym" class="services-img"/>
+                <img src="./Images/gym-2.jpg" alt="gym" class="services-img animate-img"/>
             </div>
         </div>
     </div>
+    <!-- Memberships sction -->
     <div class="memberships">
-        <h1> View Our Plans</h1>
-        <p class="membership-desc">Get Started Today and Receive 25% off your first month</p>
+        <h1 class="animate-membership"> View Our Plans</h1>
+        <p class="membership-desc animate-membership">Get Started Today and Receive 25% off your first month</p>
         <div class="membership-wrapper">
-            <div class="membership-card">
+            <div class="membership-card animate-card">
                 <div class="membership-title">
                     <i class="fa-solid fa-dumbbell"></i>    
                         <h3> Starter</h3> 
@@ -67,7 +70,7 @@
                 </div>
                 <a href="/" class="button"> Sign Up</a>
             </div>
-            <div class="membership-card">
+            <div class="membership-card animate-card">
                 <div class="membership-title">
                     <i class="fa-solid fa-bicycle"></i>    
                         <h3> Silver</h3> 
@@ -79,7 +82,7 @@
                 </div>
                 <a href="/" class="button"> Sign Up</a>
             </div>
-            <div class="membership-card">
+            <div class="membership-card animate-card">
                 <div class="membership-title">
                     <i class="fa-solid fa-dumbbell"></i>    
                         <h3> Gold</h3> 
@@ -94,9 +97,11 @@
             </div>
         </div>
     </div>
+
+    <!-- team Section -->
     <div class="team">
         <div class="team-wrapper">
-            <div class="team-text">
+            <div class="team-text animate-team">
                 <p class="topline"> Private Coaching</p>
                 <h1>Meet Out Trainers</h1>                
                 <p class="team-desc">
@@ -105,7 +110,7 @@
 
                 </p>
             </div>
-            <div class="team-text">
+            <div class="team-text animate-team">
                 <p class="topline"> Free Trail</p>
                 <h1>7 Day Trail</h1>
                 <p class="team-desc">
@@ -113,19 +118,19 @@
 
                 </p>
             </div>
-          <div class="team-card">
+          <div class="team-card animate-team">
             <p>Trainer1</p>
             <img src="./Images/person-2.jpg" alt="" class="team-img">
           </div>
-          <div class="team-card">
+          <div class="team-card animate-team">
             <p>Trainer2</p>
             <img src="./Images/person-5.jpg" alt="" class="team-img">
           </div>
-          <div class="team-card">
+          <div class="team-card animate-team">
             <p>Trainer3</p>
             <img src="./Images/person-6.jpg" alt="" class="team-img">
           </div>
-          <div class="team-card">
+          <div class="team-card animate-team">
             <p>Trainer4</p>
             <img src="./Images/person-7.jpg" alt="" class="team-img">
           </div>
@@ -134,6 +139,56 @@
     </div>
 
     <!-- email section -->
+<div class="email">
+    <div class="email-content">
+       <h1 class="animate-email">Get Access to Members only Perks</h1>
+       <p class="animate-email">Sign up for our newsletter belw to get $100 off your first personal training session!</p>
+        <form action="#" class="animate-email">
+            <div class="form-wrap">
+                <label for="email">
+                    <input type="email" placeholder="Enter your email" id="email">
+
+                </label>
+                <button class="button" type="submit"> Sign Up</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Footer Section -->
+<div class="footer">
+    <div class="footer-wrapper">
+        <div class="footer-desc">
+            <h1>Orion Fitness</h1>
+            <p> Orion Fitness gym located in Bhainsepati lalitpur</p>
+            <p id="phone">9860708160</p>
+            
+        </div>
+        <div class="footer-links">
+            <h2 class="footer-title">Contact Us</h2>
+            <a href="/" class="footer-link">Contact</a>
+            <a href="/" class="footer-link">Suppter</a>
+            <a href="/" class="footer-link">Sponsorships</a>
+            
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer-links">
+            <h2 class="footer-title">Memberships</h2>
+            <a href="/" class="footer-link">Pricing</a>
+            <a href="/" class="footer-link">Plans</a>
+            <a href="/" class="footer-link">FAQ</a>
+            
+        </div>
+        <div class="footer-links">
+            <h2 class="footer-title">Social Media</h2>
+            <a href="/" class="footer-link">Instagram</a>
+            <a href="/" class="footer-link">Facebook</a>
+            <a href="/" class="footer-link">Youtube</a>
+            <a href="/" class="footer-link">Twitter</a>
+            
+        </div>
+    </div>
+</div>
     <script src="app.js"> </script>
 </body>
 </html>
